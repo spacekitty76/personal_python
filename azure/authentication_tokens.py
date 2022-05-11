@@ -6,6 +6,13 @@ from typing import Union
 from uuid import uuid4
 import requests
 
+# NOTE: you have to export some stuff to your shell variables for this to work
+"""
+export ARM_CLIENT_ID="" \
+export ARM_CLIENT_SECRET="" \
+export ARM_TENANT_ID=""
+"""
+
 # MSAL library. Used it for Graph Api
 def assume_graph_role(sp_app_id: str = None, sp_secret: str = None, sp_tenant: str = None, set_env: bool = False) -> dict:
     """Assume a role for a given account using a service principal for graph-api.
@@ -77,4 +84,19 @@ def get_sdk_credential(
 sdk_cred = get_sdk_credential(client_id="", client_secret="", tenant_id="")
 # print(sdk_cred)
 token = sdk_cred.get_token("https://graph.microsoft.com/.default")
-print(token[0])
+# print(token[0])
+
+def get_sdk_token(scope: str, client_id: str = None, client_secret: str = None, tenant_id: str = None):
+    """Return the token from the sdk_credential.
+
+    Args:
+        client_id (str, optional): Explicitily call out the client_id to use.
+        client_secret (str, optional): Explicitily call out the client_secret to use.
+        tenant_id (str, optional): Explicitily call out the tenant_id to use.
+        scope (str, required): Scope for the token's authentication.
+            Example: "https://graph.microsoft.com/.default"
+
+    Returns:
+        str: The authorization token as a string
+    """
+    return get_sdk_credential(client_id=client_id, client_secret=client_secret, tenant_id=tenant_id).get_token(scope).token
