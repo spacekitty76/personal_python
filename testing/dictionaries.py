@@ -1,10 +1,10 @@
 # role_perms = {"SecOpsAdmin": ["Stacy Walker", "Rando Guy"]}
 role_perms = {"SecOpsAdmin": "Stacy Walker", "DevOps Admin": "Other thing"}
 
-print(role_perms["SecOpsAdmin"])
+# print(role_perms["SecOpsAdmin"])
 
-# for item in role_perms:
-#     print(role_perms[item])
+for item in role_perms:
+    print(item)
 
 
 # for key, value in role_perms.items():
