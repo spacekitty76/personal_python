@@ -45,22 +45,24 @@ def get_enterprise_app_roles(app_roles_req, counter):
     return role_ids
 
 # NOTE: Replace with your app
-created_app_objId = "b97cb39d-c6f9-4892-81fa-2da2f54d7d92"
+created_app_objId = "a6ca08d0-6d7c-403d-9bee-4b3901d61c20"
 list_app_roles_req = requests.get(
     url=f"https://graph.microsoft.com/beta/servicePrincipals/{created_app_objId}/",
     headers=headers,
 ).json()
-role_dict = get_enterprise_app_roles(list_app_roles_req, 0)
-print(f"role dict: {role_dict}")
+# role_dict = get_enterprise_app_roles(list_app_roles_req, 0)
+# print(f"role dict: {role_dict}")
 # print(list_app_roles_req)
+print(f"app role req: {list_app_roles_req}")
 
 # # Get groups
-# group = "stacy-walker-idp-anitian-secops-admin-group"
+# group = "stacy-walker-idp-anitian-devops-role"
 # get_groups = requests.get(
 #     url=f"https://graph.microsoft.com/v1.0/groups?$filter=displayName eq '{group}'",
 #     headers=headers,
 # ).json()
+# print(get_groups)
 # group_id = get_groups["value"][0]["id"]
 # group_name = get_groups["value"][0]["displayName"]
 # print(f"group name: {group_name}")
-# # print(f"group response: {get_groups.content}")
+# print(f"group response: {get_groups.content}")
