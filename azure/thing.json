@@ -1,1 +1,39 @@
-{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups","value":[{"id":"c401ede8-83cf-46f6-b6a9-444824853621","deletedDateTime":null,"classification":null,"createdDateTime":"2022-05-10T16:35:57Z","creationOptions":[],"description":"Group to allow Anitian SecOps admin privileges.","displayName":"stacy-walker-idp-anitian-secops-admin-group","expirationDateTime":null,"groupTypes":[],"isAssignableToRole":false,"mail":null,"mailEnabled":false,"mailNickname":"5bbf9756-5","membershipRule":null,"membershipRuleProcessingState":null,"onPremisesDomainName":null,"onPremisesLastSyncDateTime":null,"onPremisesNetBiosName":null,"onPremisesSamAccountName":null,"onPremisesSecurityIdentifier":null,"onPremisesSyncEnabled":null,"preferredDataLocation":null,"preferredLanguage":null,"proxyAddresses":[],"renewedDateTime":"2022-05-10T16:35:57Z","resourceBehaviorOptions":[],"resourceProvisioningOptions":[],"securityEnabled":true,"securityIdentifier":"S-1-12-1-3288460776-1190560719-1212459446-557221156","theme":null,"visibility":null,"onPremisesProvisioningErrors":[]}]}
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+    "value": [
+        {
+            "id": "c401ede8-83cf-46f6-b6a9-444824853621",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2022-05-10T16:35:57Z",
+            "creationOptions": [],
+            "description": "Group to allow Anitian SecOps admin privileges.",
+            "displayName": "stacy-walker-idp-anitian-secops-admin-group",
+            "expirationDateTime": null,
+            "groupTypes": [],
+            "isAssignableToRole": false,
+            "mail": null,
+            "mailEnabled": false,
+            "mailNickname": "5bbf9756-5",
+            "membershipRule": null,
+            "membershipRuleProcessingState": null,
+            "onPremisesDomainName": null,
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesNetBiosName": null,
+            "onPremisesSamAccountName": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": null,
+            "preferredLanguage": null,
+            "proxyAddresses": [],
+            "renewedDateTime": "2022-05-10T16:35:57Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": true,
+            "securityIdentifier": "S-1-12-1-3288460776-1190560719-1212459446-557221156",
+            "theme": null,
+            "visibility": null,
+            "onPremisesProvisioningErrors": []
+        }
+    ]
+}
