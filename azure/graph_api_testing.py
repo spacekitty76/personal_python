@@ -12,13 +12,15 @@ headers = {
 }
 
 
-provisioning_job_id = "aws.c55797bc397b4cf5b66dac3c5f3408c6.3230159b-1cba-4380-bf77-a1480836ba3d"
-created_app_objId = "df8c5e6c-4a92-4955-8622-54f1eb97708a"
-provisioning_progress_req = requests.get(
-    url=f"https://graph.microsoft.com/beta/servicePrincipals/{created_app_objId}/synchronization/jobs/{provisioning_job_id}/",
-    headers=headers,
-).json()
-print(provisioning_progress_req)
+# provisioning_job_id = ""
+created_app_objId = ""
+
+
+# provisioning_progress_req = requests.get(
+#     url=f"https://graph.microsoft.com/beta/servicePrincipals/{created_app_objId}/synchronization/jobs/{provisioning_job_id}/",
+#     headers=headers,
+# ).json()
+# print(provisioning_progress_req)
 
 role_ids = {}
 
@@ -35,7 +37,6 @@ role_ids = {}
 # "stacy-walker-idp-anitian-secops-admin-role,stacy-walker-idp-anitian-azad-saml-idp",
 # "stacy-walker-idp-anitian-security-audit-role,stacy-walker-idp-anitian-azad-saml-idp"]
 
-# role_dict = {'stacy-walker-idp-anitian-devops-role,stacy-walker-idp-anitian-azad-saml-idp': '4990f92f-47ce-44e4-8da4-ce8599bc3246', 'stacy-walker-idp-anitian-secops-admin-role,stacy-walker-idp-anitian-azad-saml-idp': '96c72212-da90-410b-a98b-d9d885832ab4', 'stacy-walker-idp-anitian-security-audit-role,stacy-walker-idp-anitian-azad-saml-idp': 'e346b69e-3ed5-44b9-a3cd-6642d36c1208'}
 # # Remove everything after the comma to find just the group name
 # for key in role_dict:
 #     separator = ","
@@ -43,7 +44,6 @@ role_ids = {}
 #     print(f"stripped role name: {group_name}")
 
 # NOTE: Replace with your app
-# created_app_objId = "df8c5e6c-4a92-4955-8622-54f1eb97708a"
 # list_app_roles_req = requests.get(
 #     url=f"https://graph.microsoft.com/beta/servicePrincipals/{created_app_objId}/",
 #     headers=headers,
